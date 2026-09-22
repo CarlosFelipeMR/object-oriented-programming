@@ -8,18 +8,18 @@ Durante a disciplina, são estudados conceitos da Programação Orientada a Obje
 
 ## 💻 Conteúdos estudados
 
-* Classes e objetos
-* Atributos e métodos
-* Construtores
-* Encapsulamento
-* Getters e setters
-* Sobrecarga de métodos
-* Sobrecarga de construtores
-* Herança
-* Polimorfismo
-* Modificadores de acesso
-* `this`
-* Métodos `toString()`
+ Classes e objetos
+ Atributos e métodos
+ Construtores
+ Encapsulamento
+ Getters e setters
+ Sobrecarga de métodos
+ Sobrecarga de construtores
+ Herança
+ Polimorfismo
+ Modificadores de acesso
+ `this`
+ Métodos `toString()`
 
 ## 🗂️ Atividades
 
@@ -27,10 +27,10 @@ Este repositório contém os exercícios e atividades desenvolvidos durante as a
 
 ## 🛠️ Tecnologias utilizadas
 
-* Java
-* Geany
-* Git
-* GitHub
+Java
+Geany
+Git
+GitHub
 
 ## 🎯 Objetivo
 
