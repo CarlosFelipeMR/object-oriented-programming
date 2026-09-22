@@ -4,7 +4,7 @@ public class SessaoCinema{
 	private String filme;
 	private int capacidade;
 	private int ingressosVendidos;
-	private double precoIngresso;
+	private Double precoIngresso;
 	
 	public SessaoCinema(int numeroDaSala,String filme,int capacidade){
 		
@@ -15,7 +15,7 @@ public class SessaoCinema{
 		this.ingressosVendidos = 0;
 	}
 	
-	public SessaoCinema(int numeroDaSala,String filme,int capacidade,double precoIngresso){
+	public SessaoCinema(int numeroDaSala,String filme,int capacidade,Double precoIngresso){
 		
 		this.numeroDaSala = numeroDaSala;
 		this.filme = filme;
@@ -24,81 +24,58 @@ public class SessaoCinema{
 		this.ingressosVendidos = 0;
 	}
 	
-	double venda;
+
 	
-	public double venderIngresso(){
+	public Double venderIngresso(){
 	
 		if( this.capacidade > this.ingressosVendidos){
 			
-			ingressosVendidos += 1;
-			venda = precoIngresso;
-			return venda;
+			this.ingressosVendidos += 1;
+			return this.precoIngresso;
 		
 		}else{
-			
-			venda = -1;
-		
-			return venda;
+			return -1.0;
 		}
 			
 	
 	
 	
 	}
-	public double venderIngresso(int quantidade){
+	public Double venderIngresso(int quantidade){
 	
 		if (this.ingressosVendidos + quantidade <= this.capacidade){
-			if(quantidade + ingressosVendidos > this.capacidade){
-				System.out.println("quantidade ultrapassa a capacidade!");
-				return 0.0;
-			}else{
-				venda = precoIngresso * quantidade;
+			
+				Double venda = precoIngresso * quantidade;
 				ingressosVendidos += quantidade;
 				return venda;
-			}
-		}else{
 			
-			venda = -1;
-		
-			return venda;
+		}else{
+			return -1.0;
 		}
 	
 	}
-	public double venderIngresso(int quantidade,boolean meiaEntrada){
-		
-		if( this.capacidade > this.ingressosVendidos){
-			if(meiaEntrada){
-				if(quantidade > this.capacidade){
-					System.out.println("quantidade ultrapassa a capacidade!");
-					return 0.0;
-				}else{
-					venda = (precoIngresso/2) * quantidade;
-					ingressosVendidos += quantidade;
-					return venda;
-				}
-			}else{
-				if(quantidade > this.capacidade){
-					System.out.println("quantidade ultrapassa a capacidade!");
-					return 0.0;
-				}else{
-					
-					venda = precoIngresso * quantidade;
-					ingressosVendidos += quantidade;
-					return venda;
-				}
-			}
-		}else{
-			
-			venda = -1;
-		
-			return venda;
-		}
-		
-	}
-	double valorTotal;
+	public Double venderIngresso(int quantidade, boolean meiaEntrada){
+    
+    if(this.ingressosVendidos + quantidade <= this.capacidade){
+        
+        Double venda;
+        
+        if(meiaEntrada){
+            venda = (this.precoIngresso / 2) * quantidade;
+        }else{
+            venda = this.precoIngresso * quantidade;
+        }
+        
+        this.ingressosVendidos += quantidade;
+        return venda;
+        
+    }else{
+        return -1.0;
+    }
+}
 	public double calcularBilheteria(){
 		
-		valorTotal = this.ingressosVendidos * this.precoIngresso;
+		Double valorTotal = this.ingressosVendidos * this.precoIngresso;
 		
 		return valorTotal;
 		

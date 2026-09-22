@@ -132,7 +132,7 @@ public class Cinema {
                     System.out.println("Digite true para meia entrada ou false para ingressos normais:");
                     meia = scan.nextBoolean();
 
-                    System.out.println(cine1.venderIngresso(quantidade, meia));
+					System.out.println(cine1.venderIngresso(quantidade, meia));
                     System.out.println();
 
                     break;
