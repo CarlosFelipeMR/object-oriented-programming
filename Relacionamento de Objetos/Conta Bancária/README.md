@@ -3,8 +3,8 @@ Conta Bancária
 Elabore uma classe Pessoa, com os seguintes atributos:
 
 Pessoa
-- String nome
-- String cpf
+- - String nome
+- - String cpf
 - String endereco
 - String telefone
 - Double renda
