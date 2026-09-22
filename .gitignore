@@ -1,0 +1,18 @@
+# Arquivos compilados do Java
+*.class
+
+# Pasta de compilação
+bin/
+out/
+
+# Configurações do Eclipse
+.classpath
+.project
+.settings/
+
+# Arquivos do VS Code
+.vscode/
+
+# Arquivos temporários
+*.tmp
+*.log
