@@ -4,22 +4,22 @@ Repositório criado para armazenar as atividades e exercícios desenvolvidos na 
 
 ## 📚 Sobre a disciplina
 
-Durante a disciplina, são estudados conceitos da Programação Orientada a Objetos utilizando a linguagem **Java**.
+Durante a disciplina, são estudados conceitos de Programação Orientada a Objetos utilizando a linguagem **Java**.
 
 ## 💻 Conteúdos estudados
 
-* Classes e objetos
-* Atributos e métodos
-* Construtores
-* Encapsulamento
-* Getters e setters
-* Sobrecarga de métodos
-* Sobrecarga de construtores
-* Herança
-* Polimorfismo
-* Modificadores de acesso
-* `this`
-* Métodos `toString()`
+- Classes e objetos
+- Atributos e métodos
+- Construtores
+- Encapsulamento
+- Getters e setters
+- Sobrecarga de métodos
+- Sobrecarga de construtores
+- Herança
+- Polimorfismo
+- Modificadores de acesso
+- `this`
+- Métodos `toString()`
 
 ## 🗂️ Atividades
 
@@ -27,10 +27,10 @@ Este repositório contém os exercícios e atividades desenvolvidos durante as a
 
 ## 🛠️ Tecnologias utilizadas
 
-* Java
-* Geany
-* Git
-* GitHub
+- Java
+- Geany
+- Git
+- GitHub
 
 ## 🎯 Objetivo
 
