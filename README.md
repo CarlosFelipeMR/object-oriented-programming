@@ -8,8 +8,8 @@ Durante a disciplina, são estudados conceitos da Programação Orientada a Obje
 
 ## 💻 Conteúdos estudados
 
- Classes e objetos
- Atributos e métodos
+ -> Classes e objetos
+ -> Atributos e métodos
  Construtores
  Encapsulamento
  Getters e setters
