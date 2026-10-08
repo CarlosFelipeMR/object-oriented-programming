@@ -111,7 +111,7 @@ public class Onibus{
 			
 		}
 	}
-	
+	//encapsulamento
 	public int getNumero(){
 	
 		return this.numero;
