@@ -17,6 +17,7 @@ Durante a disciplina, são estudados conceitos de Programação Orientada a Obje
 - Sobrecarga de construtores
 - Herança
 - Polimorfismo
+- Array
 - Modificadores de acesso
 - `this`
 - Métodos `toString()`
