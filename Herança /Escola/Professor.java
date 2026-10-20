@@ -1,11 +1,20 @@
 public class Professor extends Pessoa{
 
-	private String diciplina;
+	private String disciplina;
 	private Double valorHoraAula;
 	private int quantidadeHoras;
 
 	
-	public Double calculaPagamento(){
+	public Professor(String nome,String cpf,String telefone, String disciplina, Double valorHoraAula, int quantidadeHoras){
+		
+		super(nome, cpf, telefone);
+		this.disciplina = disciplina;
+		this.valorHoraAula = valorHoraAula;
+		this.quantidadeHoras = quantidadeHoras;
+		
+	}
+
+	public Double calcularPagamento(){
 		
 		Double total = valorHoraAula * quantidadeHoras;
 		
@@ -13,14 +22,14 @@ public class Professor extends Pessoa{
 		
 	}
 
-	public String getDiciplina(){
+	public String getDisciplina(){
 		
-		return this.diciplina;
+		return this.disciplina;
 	
 	}
-	public void setDiciplina(String diciplina){
+	public void setDisciplina(String disciplina){
 		
-		this.diciplina = diciplina;
+		this.disciplina = disciplina;
 		
 	}
 	

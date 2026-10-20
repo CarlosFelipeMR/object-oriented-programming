@@ -5,7 +5,17 @@ public class Aluno extends Pessoa{
 	private Double nota1;
 	private Double nota2;
 
-	public Double calculaMedia(){
+	public Aluno(String nome,String cpf,String telefone,String matricula,String curso,Double nota1,Double nota2){
+		
+		super(nome,cpf,telefone);
+		this.matricula = matricula;
+		this.curso = curso;
+		this.nota1 = nota1;
+		this.nota2 = nota2;
+	
+	}
+	
+	public Double calcularMedia(){
 		
 		Double media = (nota1 + nota2) / 2;
 		return media;
@@ -14,7 +24,7 @@ public class Aluno extends Pessoa{
 
 	public String situacao(){
 		
-		Double result = calculaMedia();
+		Double result = calcularMedia();
 		
 		if(result >= 6){
 		

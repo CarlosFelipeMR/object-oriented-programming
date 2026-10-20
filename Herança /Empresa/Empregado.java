@@ -4,8 +4,16 @@ public class Empregado extends Pessoa{
 	private Double salarioBase;
 	private Double imposto; 
 
+	public Empregado(String nome,String endereco,String telefone,int codigoSetor, Double salarioBase, Double imposto){
+		
+		super(nome,endereco,telefone);
+		this.codigoSetor = codigoSetor;
+		this.salarioBase = salarioBase;
+		this.imposto = imposto;
+		
+	}
 
-	public Double calcularSalario(){
+	public Double calculaSalario(){
 		
 		Double taxa = this.imposto/100;
 		
