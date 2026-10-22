@@ -1,20 +1,15 @@
 public class Pickup extends Carro{
-
-
 	private int capacidadeCarga;
 	private int pesoCarga;
 	
-	
-	public Pickup(int passageiros,int combustivel,Double rendimento,boolean cambioAutomatico,int capacidadeCarga,int pesoCarga){
-		
-		super(passageiros,combustivel,rendimento,cambioAutomatico);
+	public Pickup(int passageiros, int combustivel, Double rendimento,
+	boolean cambioAutomatico, int capacidadeCarga, int pesoCarga){
+		super(passageiros, combustivel, rendimento, cambioAutomatico);
 		this.capacidadeCarga = capacidadeCarga;
-		if (pesoCarga > capacidadeCarga) {
-			this.pesoCarga = capacidadeCarga;
-		} else {
+		if(pesoCarga <= this.capacidadeCarga)
 			this.pesoCarga = pesoCarga;
-		}
-	
+		else
+			this.pesoCarga = this.capacidadeCarga;
 	}
 	
 	@Override
@@ -26,30 +21,22 @@ public class Pickup extends Carro{
 		return (super.autonomia() * 0.75);
 	}
 	
-	
-	public int getCapacidadeCarga() {
-    return this.capacidadeCarga;
+	public void setCapacidadeCarga(int capacidadeCarga){
+		if(pesoCarga <= this.capacidadeCarga)
+			this.pesoCarga = pesoCarga;
+		else
+			this.pesoCarga = this.capacidadeCarga;
 	}
-
-	public void setCapacidadeCarga(int capacidadeCarga) {
-    this.capacidadeCarga = capacidadeCarga;
-
-    if (pesoCarga > capacidadeCarga) {
-        this.pesoCarga = capacidadeCarga;
-    }
-}
-
-	public int  getPesoCarga() {
+	
+	public int getCapacidadeCarga(){
+		return this.capacidadeCarga;
+	}
+	
+	public void setPesoCarga(int pesoCarga){
+		this.pesoCarga = pesoCarga;
+	}
+	
+	public int getPesoCarga(){
 		return this.pesoCarga;
 	}
-
-	public void setPesoCarga(int pesoCarga) {
-		if (pesoCarga > capacidadeCarga) {
-			this.pesoCarga = capacidadeCarga;
-		} else {
-			this.pesoCarga = pesoCarga;
-		}
-	}
-
-
 }
